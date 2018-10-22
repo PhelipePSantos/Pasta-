@@ -26,16 +26,16 @@ int main()
 {	
 
 	int a, b, c, d;
-	printf_s("Digite o primeiro valor\n");
+	printf_s("Digite o primeiro valor");
 	scanf_s("%i", &a);
-	printf_s("Digite o segundo valor\n");
+	printf_s("Digite o segundo valor");
 	scanf_s("%i", &b);
-	printf_s("Digite o terceiro valor\n");
+	printf_s("Digite o terceiro valor");
 	scanf_s("%i", &c);
-	printf_s("Digite o quarto valor\n");
+	printf_s("Digite o quarto valor");
 	scanf_s("%i", &d);
 	maior(a, b, c, d);
-	printf_s("O maior numero eh : %i\n ", maior(a, b , c , d));
+	printf_s("O maior numero eh :%i\n ", maior(a, b , c , d));
 	system("pause");
     return 0;
 }

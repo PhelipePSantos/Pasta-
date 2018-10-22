@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula2210", "Aula2210\Aula22
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maior Numero Professor", "Maior Numero Professor\Maior Numero Professor.vcxproj", "{6D37A3B8-1E19-4712-9E16-6FDD45EEF6DD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Numero maior que a media", "Numero maior que a media\Numero maior que a media.vcxproj", "{25410392-EF4A-451E-BAC7-64E58E95EEEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{6D37A3B8-1E19-4712-9E16-6FDD45EEF6DD}.Release|x64.Build.0 = Release|x64
 		{6D37A3B8-1E19-4712-9E16-6FDD45EEF6DD}.Release|x86.ActiveCfg = Release|Win32
 		{6D37A3B8-1E19-4712-9E16-6FDD45EEF6DD}.Release|x86.Build.0 = Release|Win32
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Debug|x64.ActiveCfg = Debug|x64
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Debug|x64.Build.0 = Debug|x64
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Debug|x86.ActiveCfg = Debug|Win32
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Debug|x86.Build.0 = Debug|Win32
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Release|x64.ActiveCfg = Release|x64
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Release|x64.Build.0 = Release|x64
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Release|x86.ActiveCfg = Release|Win32
+		{25410392-EF4A-451E-BAC7-64E58E95EEEB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
