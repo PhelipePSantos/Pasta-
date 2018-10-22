@@ -51,6 +51,34 @@ void InformarParOuImpar(int a)
 		printf("impar\n");
 	}
 }
+
+void ExemploSwitch()
+{
+	printf("Escolha uma opcao:\n");
+	printf("1 - a\n2 - b\n3 - c\n 4 - d\n");
+
+	int op = 0;
+	scanf_s("%i", &op);
+
+	switch (op)
+	{
+	case 1:
+		printf("Voce escolheu a\n");
+		break;
+	case 2:
+		printf("Voce escolheu b\n");
+		break;
+	case 3:
+		printf("Voce escolheu c\n");
+		break;
+	case 4:
+		printf("Voce escolheu d\n");
+		break;
+	default:
+		printf("Opcao invalida\n");
+		break;
+	}
+}
 int main()
 {
 
