@@ -5,17 +5,15 @@
 #include <stdlib.h>
 
 int maior(int a, int b, int c, int d){
-	int mai;
-	if (a >=b && a>=c && a>=d) {
-		mai = a;
-	}
-	if (b >= a && b>=c && b>=d) {
+	int mai =a;
+	if (mai < b) {
 		mai = b;
 	}
-	if (c >= a && c>=b && c>=d) {
+
+	if (mai < c) {
 		mai = c;
 	}
-	if (d >= a && d>=b && d>=c) {
+	if (mai < d ) {
 		mai = d;
 	}
 	return mai;
