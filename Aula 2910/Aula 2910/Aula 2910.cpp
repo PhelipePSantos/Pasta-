@@ -21,12 +21,25 @@ int main()
 		//printf("numero: %i\n", numeroum);
 		//numeroum++;
 	//} while (numeroum < numerodois);
-	while (numeroum < numerodois - 1)
-	{	
-		numeroum++;
-		printf("%i\t",numeroum);
-		
+	if (numeroum < numerodois)
+	{
+		while (numeroum < numerodois - 1)
+		{
+			numeroum++;
+			printf("%i\t", numeroum);
+
+		}
 	}
+	else
+	{
+		while (numerodois < numeroum - 1)
+		{
+			numeroum--;
+			printf("%i\t", numeroum);
+
+		}
+	}
+
 	system("pause");
     return 0;
 }
