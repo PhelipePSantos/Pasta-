@@ -97,7 +97,14 @@ int main()
 
 	InformarParOuImpar(valorum);
 
+	printf("\n\n");
+
 	printf("\nO valor da media:%.2f\n", m);
+
+	printf("\n\n");
+
+	ExemploSwitch();
+
 
 
 
