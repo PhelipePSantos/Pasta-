@@ -14,7 +14,7 @@ int main()
 	ano = dias / 365;
 	meses = meses%12;
 	dias = dias % 30;
-	printf("Voce tem %i", ano); 
+	printf("Voce tem %i", ano);  
 	printf(" anos, %i", meses);
 	printf(" meses e %i", dias);
 	printf(" dias.");
