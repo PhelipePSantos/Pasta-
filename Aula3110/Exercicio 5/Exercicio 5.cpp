@@ -26,7 +26,7 @@ int main()
 {
 	float valor;
 	valor = Numero();
-	printf("O preco que o consumidor pagara eh: %f", preco(valor));
+	printf("O preco que o consumidor pagara eh: %.0f", preco(valor));
 	system("pause");
     return 0;
 }
