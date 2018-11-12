@@ -23,7 +23,7 @@ int main()
 	{
 		printf("Os numeros sao multiplos");
 	}
-	else
+	if((c!=0)|| (d!=0))
 	{
 		printf("Os numeros nao sao multiplos");
 	}
