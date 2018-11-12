@@ -19,7 +19,7 @@ int main()
 	b = Numero();
 	c = a % b;
 	d = b % a;
-	if((c=0)||(d=0))
+	if(c==0)||d==0)
 	{
 		printf("Os numeros sao multiplos");
 	}

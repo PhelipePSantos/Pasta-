@@ -1,5 +1,5 @@
 // Exercicio 5.cpp : Defines the entry point for the console application.
-//O custo ao consumidor de um carro novo È a soma do custo de f·brica com a percentagem do distribuidor e dos impostos(aplicados ao custo de f·brica). Supondo que a percentagem do distribuidor seja de 28 % e os impostos de 45 % , escrever um algoritmo que leia o custo de f·brica de um carro e escreva o custo ao consumidor.
+//O custo ao consumidor de um carro novo √© a soma do custo de f√°brica com a percentagem do distribuidor e dos impostos(aplicados ao custo de f√°brica). Supondo que a percentagem do distribuidor seja de 28 % e os impostos de 45 % , escrever um algoritmo que leia o custo de f√°brica de um carro e escreva o custo ao consumidor.
 
 #include "stdafx.h"
 #include <stdlib.h>
@@ -18,7 +18,6 @@ float preco(float valor)
 	float imp = fab * 0.45;
 	float total = fab + dist + imp;
 	return total;
-
 }
 
 
