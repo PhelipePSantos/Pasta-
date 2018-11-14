@@ -10,6 +10,7 @@ int Numero()
 	scanf_s("%i", &num);
 	return num;
 }
+
 int soma(int n)
 {
 	if (n == 0)
