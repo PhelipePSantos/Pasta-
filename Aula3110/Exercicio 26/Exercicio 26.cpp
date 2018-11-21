@@ -1,4 +1,4 @@
-// Exercicio 23.cpp : Defines the entry point for the console application.
+// Exercicio 26.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -16,12 +16,12 @@ void dias()
 	int dia;
 	dia = idade();
 	dia = dia * 365;
-	printf("Você viveu %i dias", dia);
+	printf("Voce viveu %i dias", dia);
 }
 int main()
 {
 	dias();
 	system("pause");
-    return 0;
+	return 0;
 }
 
