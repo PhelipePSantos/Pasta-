@@ -9,16 +9,17 @@ int Numero()
 	printf("Favor digitar um numero\n");
 	scanf_s("%i", &numero);
 	return numero;
+
 }
 
 void somapar()
 {
 	int n, i, par, soma=0;
 	n = Numero();
-	for (i = 0; i >= n; i++)
+	for (i = 0; i <= n; i++)
 	{
 		par = i % 2;
-		if(par=0)
+		if(par==0)
 		{
 			soma = soma + i;
 		}
