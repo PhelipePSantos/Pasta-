@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stdlib.h>
+
+int main(int argc, char** argv) 
+{
+	float salario = 1908, carro, vendas;
+	printf("Favor digitar o numero de carros que foram vendidos no mes\n");
+	scanf("%f", &carro);
+	carro = carro * 50;
+	printf("Favor digitar o valor das vendas do mes\n");
+	scanf("%f", &vendas);
+	vendas = vendas * 0.05;
+	salario = salario + carro + vendas;
+	printf("O salario total do funcionario sera de %000.f\n ", salario);
+
+	 system("pause");
+
+	return 0;
+}
