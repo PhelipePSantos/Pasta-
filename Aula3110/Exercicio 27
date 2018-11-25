@@ -31,7 +31,8 @@ int main(int argc, char** argv)
 	}
 	else
 	{
-		printf("Valor pago é menor do que o Total a pagar");
+		printf("Valor pago eh menor do que o Total a pagar\n");
+		system("pause");
 	}
 	printf("O valor da compra eh: %i \n O valor do troco eh: %i \n Serao entregues %i notas de Cem, %i notas de Dez e %i notas de Um  \n", compra, troco, cem, dez, um);
 	
