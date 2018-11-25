@@ -1,0 +1,41 @@
+#include <iostream>
+#include <stdlib.h>
+
+int main(int argc, char** argv) 
+{
+	int compra, troco, valor, um, dez, cem;
+	printf("Favor digitar o valor da compra\n");
+	scanf("%i", &compra);
+	printf("Favor digitar o valor pago\n");
+	scanf("%i", &valor);
+	troco = valor - compra;
+	valor = troco;
+	if(valor>=100)
+	{
+		cem = valor/100;
+		dez = valor % 100;
+		dez = dez/10;
+		um = valor % 10;
+	}
+	else if(valor>=10 && valor<100)
+	{
+		cem = 0;
+		dez = valor /10;
+		um = valor % 10; 
+	}
+	else if(valor>=0 && valor<10)
+	{
+		cem = 0;
+		dez = 0;
+		um = valor;
+	}
+	else
+	{
+		printf("Valor pago é menor do que o Total a pagar");
+	}
+	printf("O valor da compra eh: %i \n O valor do troco eh: %i \n Serao entregues %i notas de Cem, %i notas de Dez e %i notas de Um  \n", compra, troco, cem, dez, um);
+	
+	 system("pause");
+
+	return 0;
+}
