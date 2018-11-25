@@ -1,0 +1,42 @@
+
+#include <iostream>
+#include <stdlib.h>
+int main() 
+{
+
+	int fil, i=0;
+	float sal=1, medfil=0, medsal=0, maior=0, perc;
+		while(sal>=0)
+		{
+		
+		printf("Digite seu salario \n");
+		scanf("%f", &sal);
+		
+		if(sal>=0)
+		{
+			printf("Digite seu numero de filhos \n");
+			scanf("%i", &fil);
+			medfil = medfil + fil;
+			medsal = medsal + sal;
+			i = i+1;
+				if (maior<sal)
+				{
+					maior=sal;
+				}
+				if (sal<=100)
+				{
+					perc = perc + 1;
+				}
+			}
+		}
+		medfil = medfil/i;
+		medsal = medsal/i;
+		perc = (perc*100 )/i;
+		printf("A media do salario da populacao eh %0.f. /n A media do numero de filhos eh %0.f. /n O maior salario eh %0.f. /n %0.f por cento das pessoas da cidade recebem menos do que 100 reais",medsal, medfil, maior, perc);
+		
+		
+	 system("pause");
+
+	return 0;
+
+}
