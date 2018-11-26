@@ -1,0 +1,51 @@
+#include "stdafx.h"
+#include <stdlib.h>
+
+int main()
+{
+	int idade = 1, olho=0, cabelo=0, maior=-50, quant=0, fem=0;
+	char sexo;
+	while (idade > 0)
+	{
+		printf("Digite sua idade\n");
+		scanf_s("%i", &idade);
+		printf("Qual e seu sexo? ('M' para masculino e 'F' para feminino)\n");
+		getchar();
+		sexo = getchar();
+		if (sexo != 'f' && sexo != 'F' && sexo != 'm' && sexo != 'M')
+		{
+			printf("Opcao invalida, Tente novamente\n");
+			sexo = getchar();
+		}
+		if (sexo != 'f' && sexo != 'F');
+		{
+			fem = 1;
+		}
+		printf("Selecione a cor dos seus olhos (1-azuis 2-verdes 3-castanhos)\n");
+		scanf_s("%i", &olho);
+		if (olho < 1 && olho >3)
+		{
+			printf("Opção invalida, Tente novamente\n");
+			scanf_s("%i", &olho);
+		}
+		printf("Selecione a cor dos seus cabelos (1-Louros 2-Castanhos 3-Pretos)\n");
+		scanf_s("%i", &cabelo);
+		if (cabelo < 1 && cabelo >3)
+		{
+			printf("Opção invalida, Tente novamente\n");
+			scanf_s("%i", &cabelo);
+		}
+		if (idade > maior)
+		{
+			maior = idade;
+		}
+		if (idade >= 18 && idade <= 35 && olho == 2 && cabelo == 1 && fem==1)
+		{
+			quant = quant + 1;
+		}
+
+	}
+	printf("A maior idade da populacao eh %i \n A quantidade de indivíduos do sexo feminino cuja idade está entre 18 e 35 anos inclusive e que tem olhos verdes e cabelos louros eh %i.", maior, quant);
+	system("pause");
+	return 0;
+}
