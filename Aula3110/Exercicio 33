@@ -1,0 +1,18 @@
+#include <iostream>
+#include <stdlib.h>
+int main() 
+{	
+	int ano=0;
+	float Chico = 1.5, Ze = 1.1;
+	while (Chico>=Ze)
+	{
+		Chico = Chico + 0.2;
+		Ze = Ze+0.3;
+		ano = ano+1;
+	}
+	printf("Levaram %i anos para que Ze seja maior do Chico/n", ano);	 
+
+	system("pause");
+	return 0;
+
+}
