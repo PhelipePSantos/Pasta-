@@ -1,0 +1,12 @@
+     int main()
+        {
+          float area, base, alt;
+          printf_s("informe o valor da base:");
+          scanf_s("%f", &base);
+          printf_s("informe o valor da altura:");
+          scanf_s("%f", &alt);
+          area = (base * alt) / 2;
+          printf_s("Resultado final: %.2f\n", area);
+          system("pause");
+            return 0;
+}
