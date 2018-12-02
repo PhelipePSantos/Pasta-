@@ -1,0 +1,20 @@
+#include<stdlib.h>
+#include <stdio.h>
+#include "stdafx.h"
+int main()
+{
+            int a,b, c;
+            printf("Informe um valor para A:");
+              scanf("%i",&a);
+              printf("Informe um valor para B:");
+              scanf("%i",&b);
+             c = a;
+             a = b;
+             b = c;
+             printf("a:%i\n",a);
+             printf("b:%i",b);
+             printf("\n");		
+
+          system("pause");
+            return 0;
+}
