@@ -1,0 +1,38 @@
+#include <stdlib.h>
+#include<stdio.h> 
+
+ int main()
+        {
+
+
+          int num, i, cont=0;
+
+          printf("Digite um numero de 2 a 20: ");
+          scanf("%i",&num);
+          if(num < 2 || num > 20)
+          {
+            printf("\nNumero invalido");
+          }
+          else
+          {
+
+              while(num>0)
+              {
+                printf("\t");
+                for(i=0; i<cont; i++)
+                {
+
+              printf("x");
+              }
+
+            for(i=1; i<=num; i++)
+              {
+              printf("%i",i);
+            printf("\n");
+            
+            num--;
+            cont++;
+            }
+          }
+          }
+}
