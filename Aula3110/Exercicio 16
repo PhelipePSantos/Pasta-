@@ -1,0 +1,46 @@
+#include "stdafx.h"
+#include <stdlib.h>
+#define MAX 20
+
+        int poschar(char v[MAX],char c)
+        {
+          int i;
+       for (i = 0; i < MAX && v[i] != '\0' && v[i] != c; i++);
+		{
+          	if (i == MAX || v[i] == '\0')
+			{
+		
+            	return -1;
+         	}
+          	else
+			{
+		  
+            return i;
+         	}
+     
+		}
+		}
+        void string()
+        {
+          char v[MAX], c;
+          int p;
+          printf("informe a frase: ");
+          gets_s(v);
+          printf("informe o caractere  a ser localizada:");
+          scanf_s("%c", &c);
+          p = poschar(v, c);
+          if (p == -1)
+		    {
+            printf("Nao encotrado!");
+        	}
+          else
+		  {
+            printf("Encontrado na posicao: %i", p);
+		  }
+		}
+	        int main()
+        {
+          string();
+          system("pause");
+          return 0;
+        }
