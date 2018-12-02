@@ -1,0 +1,20 @@
+
+#include<stdlib.h>
+#include <stdio.h>
+#include "stdafx.h"
+#include <math.h>
+  
+  int main()
+    {
+        float salario,soma,calc, liq;
+        printf("exercicio 25");
+        printf("informe seu salario bruto: ");
+          scanf_s("%f", &salario);
+        soma = salario * 0.10;
+        calc = salario *0.05;
+        liq = salario - (soma + calc);
+        printf("salario final:%.2f", liq);
+
+        system("pause");
+        return 0;
+}
