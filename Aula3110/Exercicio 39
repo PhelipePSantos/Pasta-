@@ -1,0 +1,76 @@
+// Exercicio 39.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
+struct pessoa
+
+{
+	char nome[30];
+	float alt;
+	int peso;
+	int cpf;
+	char sexo[2];
+};
+
+int main()
+{
+	int imc, pesq, resp=1, i=0, quant=0;
+	struct pessoa P[100];
+	{
+		while (resp == 1)
+		{
+			printf("Digite o nome:\n");
+
+			gets_s(P[i].nome);
+
+			printf("Digite a sua altura\n");
+
+			scanf_s("%f", &P[i].alt);
+
+			printf("Digite o seu peso:\n");
+
+			scanf_s("%i", &P[i].peso);
+
+			printf("Digite o seu cpf\n");
+
+			scanf_s("%i", &P[i].cpf);
+
+			printf("Digite o seu sexo(M ou F)\n");
+
+			gets_s(P[i].sexo);
+
+			i++;
+			quant = quant + 1;
+			printf("Se deseja inserir um novo cadastro pressione 1\n");
+			scanf_s("%i", &resp);
+			
+		}
+	}
+	printf("Digite o cpf a ser pesquisado");
+	scanf_s("%i", &pesq);
+	for (i = 0; i < quant; i++)
+	    {
+		if (pesq == P[i].cpf)
+		{
+			imc = P[i].peso / (P[i].alt*P[i].alt);
+			printf(P[i].nome);
+			printf("\n O seu IMC eh: %i", imc);
+			system("pause");
+		}
+		else
+		{
+			printf("Cpf não cadastrado\n");
+		}
+		}
+
+
+	system("pause");
+
+
+    return 0;
+}
+
