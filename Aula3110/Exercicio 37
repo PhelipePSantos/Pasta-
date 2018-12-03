@@ -1,0 +1,57 @@
+// Exercicio 37.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+
+#include <stdlib.h>
+
+
+
+struct dma
+
+{
+
+	int dia;
+	int mes;
+	int ano;
+
+};
+
+
+
+int main()
+
+{
+	int diaA, diaB, dif;
+	struct dma A;
+
+	printf("Digite a data:\n");
+	scanf_s("%i", &A.dia);
+	scanf_s("%i", &A.mes);
+	scanf_s("%i", &A.ano);
+
+	struct dma B;
+
+	printf("Digite a data:\n");
+	scanf_s("%i", &B.dia);
+	scanf_s("%i", &B.mes);
+	scanf_s("%i", &B.ano);
+	
+	diaA = A.ano * 365 + A.mes * 30 + A.dia;
+	diaB = B.ano * 365 + B.mes * 30 + B.dia;
+	if (diaA >= diaB)
+	{
+		dif = diaA - diaB;
+	}
+	else
+	{
+		 dif = diaB - diaA;
+	}
+
+	printf("Decorreram %i dias entre as 2 datas/n", dif);
+
+	system("pause");
+
+	return 0;
+
+}
