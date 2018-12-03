@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+
+struct hm
+
+{
+
+	int hora;
+	int min;
+
+};
+
+
+int main()
+{
+	int minu=0;
+	printf("Digite um intervalo de tempo em minutos\n");
+	scanf_s("%i", &minu);
+
+	struct hm P;
+	P.hora = minu / 60;
+	P.min = minu % 60;
+
+	printf("%i horas e %i minutos", P.hora, P.min);
+	system("pause");
+    return 0;
+}
